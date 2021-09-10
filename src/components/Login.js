@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { connect } from 'react-redux';
 
 const Login = (props) => {
     return(
@@ -172,7 +173,10 @@ const Form = styled.div`
     }
  `;
  
+const mapStateToProps = (state) => {
+    return {};
+};
 
+const mapDispatchToProps = (dispatch) => ({});
 
-
-export default Login;
+export default connect(mapStateToProps, mapDispatchToProps)(Login);
