@@ -1,33 +1,56 @@
 import styled from "styled-components";
+import { useState } from 'react';
+import PostModal from "./PostModal";
 
 const Main = (props) => {
+  const [showModal, setShowModal] = useState("close");
+
+  const handleClick = (e) => {
+    e.preventDefault();
+    if (e.target !== e.currentTarget) {
+      return;
+    }
+
+    switch (showModal) {
+      case "open":
+        setShowModal("close");
+        break;
+      case "close":
+        setShowModal("open");
+        break;
+      default:
+        setShowModal("close");
+        break;
+    }
+  };
+
   return (
     <Container>
       <ShareBox>
         <div>
-          <img src="/images/user.svg" alt="" srcset="" />
-          <button>Start a post</button>
+          <img src="/images/user.svg" alt="" />
+          <button onClick={handleClick}>Start a post</button>
         </div>
 
         <div>
           <button>
-            <img src="/images/photo-icon.svg" alt="" srcset="" />
+            <img src="/images/photo-icon.svg" alt="" />
             <span>Photo</span>
           </button>
 
           <button>
-            <img src="/images/video-icon.svg" alt="" srcset="" />
-            <span>Photo</span>
+            <img src="/images/video-icon.svg" alt="" />
+            <span>Video</span>
           </button>
 
           <button>
-            <img src="/images/event-icon.svg" alt="" srcset="" />
-            <span>Photo</span>
+            <img src="/images/event-icon.svg" alt=""  />
+            <span>Event</span>
           </button>
 
           <button>
-            <img src="/images/article-icon.svg" alt="" srcset="" />
-            <span>write article</span>
+            <img src="/images/article-icon.svg" alt="" />
+            <span>Write article</span>
           </button>
         </div>
       </ShareBox>
@@ -96,6 +119,7 @@ const Main = (props) => {
           </SocialActions>
         </Article>
       </div>
+      <PostModal showModal={showModal} handleClick={handleClick} />
     </Container>
   );
 };
