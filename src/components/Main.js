@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { useState } from 'react';
+import { useState } from "react";
 import PostModal from "./PostModal";
 
 const Main = (props) => {
@@ -44,7 +44,7 @@ const Main = (props) => {
           </button>
 
           <button>
-            <img src="/images/event-icon.svg" alt=""  />
+            <img src="/images/event-icon.svg" alt="" />
             <span>Event</span>
           </button>
 
@@ -312,8 +312,6 @@ const SocialActions = styled.div`
         margin-left: 8px;
       }
     }
-
-    
   }
 `;
 
