@@ -13,7 +13,7 @@ const Login = (props) => {
         </a>
         <div>
           <Join>Join Now</Join>
-          <SignIn>Sign in</SignIn>
+          <SignIn>Signin</SignIn>
         </div>
       </Nav>
 
