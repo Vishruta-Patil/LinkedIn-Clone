@@ -2,13 +2,12 @@ import firebase from "firebase";
 require('dotenv').config();
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCW5wg1tcrLyXT5qao-q6Q5Wel1xu0ueNE",
-  authDomain: "linkedinclonevis.firebaseapp.com",
-  projectId: "linkedinclonevis",
-  storageBucket: "linkedinclonevis.appspot.com",
-  messagingSenderId: "158116709743",
-  appId: "1:158116709743:web:be062d47b196541bcfd49a",
-  measurementId: "G-6L9RNH64PB"
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGINGSENDER_ID,
+  appId: process.env.REACT_APP_APPID
 };
 
 
