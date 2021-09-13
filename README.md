@@ -2,6 +2,16 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Features and Fuctionality
+
+-   Login using Google (Firebase Authentication)
+-   Create a new post
+-   Share photos and videos (React player for videos)
+-   Like posts
+-   Realtime update likes and posts
+-   Auto authenticate user on refresh
+-   Sign Out
+
 ## Available Scripts
 
 In the project directory, you can run:
