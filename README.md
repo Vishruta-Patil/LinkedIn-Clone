@@ -2,6 +2,9 @@
 
 **_Built using React JS, Redux, Firebase & Styled-Components_** 
 
+### Video Link
+ <a href="https://youtu.be/cV8dvl2RZF8">LinkedIn Clone Video Sample</a>
+
 ## Features and Fuctionality
 
 -   Login using Google (Firebase Authentication)
@@ -61,5 +64,4 @@
         ```bash
         firebase deploy
         ```
- ### Video Link
- <a href="https://youtu.be/cV8dvl2RZF8">LinkedIn Clone Video Sample</a>
+ 
